@@ -1,0 +1,23 @@
+{
+  "name": "irrigador",
+  "version": "1.0.0",
+  "description": "Projeto IOT - Irrigador Automatico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbltavares/irrigador.git"
+  },
+  "author": "Lucas Laborne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbltavares/irrigador/issues"
+  },
+  "homepage": "https://github.com/lbltavares/irrigador#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "nedb": "^1.8.0"
+  }
+}
