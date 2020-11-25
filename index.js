@@ -7,7 +7,7 @@ const udb = new Nedb({ autoload: true, filename: 'coletas.db' });
 const DELAY_COLETA = process.env.DELAY_COLETA || 1000 * 60 * 5; // Padrao: a cada 5 minutos
 
 // URL do dispositivo IOT (ESP8266)
-const URL_DISPOSITIVO = process.env.URL_IRRIGADOR || process.exit(-1);
+const URL_DISPOSITIVO = process.env.URL_DISPOSITIVO || process.exit(-1);
 
 // URL da planilha online do Google
 const URL_PLANILHA = process.env.URL_PLANILHA;
