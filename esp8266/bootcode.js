@@ -43,7 +43,13 @@ var _logs = [],
 
 // Registra um log
 function log(msg) {
-    let logMsg = `[${Date.now().toFixed(3).toString().padStart(15)}ms] LOG - ${msg}`;
+    let date = new Date();
+    let s = date.getSeconds().toString().padStart(2, '0');
+    let m = date.getMinutes().toString().padStart(2, '0');
+    let h = date.getHours().toString().padStart(2, '0');
+    let d = Math.round((((date.getTime() / 1000) / 60) / 60) / 24).toString().padStart(5);
+
+    let logMsg = `[${d}d ${h}:${m}:${s}] LOG - ${msg}`;
     _logs.push(logMsg);
     _logs = _logs.slice(-1 * params.LIMITE_LOGS);
     console.log(logMsg);
